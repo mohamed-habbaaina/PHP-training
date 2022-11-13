@@ -1,10 +1,11 @@
 <?php 
 // tableau qui contien l'enssemble des notes , affichage de tableau a la fin
 $notes = [];
-$saisi =null;
-while ($saisi !== 'fin') {
+while (true) {
     $saisi = readline('Entrez une note, sinon (fin): ');
-    if ($saisi !== 'fin'){
+    if ($saisi === 'fin'){
+        break;
+    } else {
         $notes[] = $saisi;
     }
 }
