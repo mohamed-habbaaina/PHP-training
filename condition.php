@@ -1,13 +1,13 @@
 <?php 
-$note = (int)readline('Entrez votre note: ');
-if ($note  > 10) {
-    echo'Felicitation.';
-} elseif ($note  == 10) {
-    echo 'vous avez juste la moyene';
-} elseif ($note  < 10){
-    echo 'Dommage, hard luck.';
+$choix = (int)readline("Entrez votre choix \n, 1 pour attaqué. \n 2 pour déffendre. ");
+switch ($choix) {
+    case 1:
+        echo 'attaqué';
+        break;
+    case 2:
+        echo 'deffendre';
+        break;
+    default:
+        echo 'choix inconnu';
+}
 
-}
-else {
-    echo 'je comprend pas votre reponse';
-}
