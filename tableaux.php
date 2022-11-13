@@ -5,4 +5,7 @@ $eleve = [
     'classe' => '2AS',
     'notes' => [12, 16, 17, 13, 18]
 ];
-echo $eleve['notes'][4];
+$eleve ['nom'] = 'jack';
+$eleve ['notes'][] = 30;
+print_r($eleve);
+// print_r($eleve['notes']);
